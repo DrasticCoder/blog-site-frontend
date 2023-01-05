@@ -1,0 +1,32 @@
+
+
+/* Popular tags */
+.popular-tags-container{
+    gap:   $gap ;
+}
+
+.popular-tags-container .article{
+    min-height:   $item-min-height-sm ;
+}
+
+.tag-name{
+    padding: 1rem 2rem;
+    background-color:   $transparent-dark-color ;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) ;
+    z-index: 10;
+}
+
+.popular-tags-container .article:hover .tag-name{
+    color:   $light-color ;
+}
+
+.popular-tags-container .article{
+    overflow: hidden;
+}
+
+.popular-tags-container .article:hover .article-image{
+    transform: scale(1.05) ;
+}

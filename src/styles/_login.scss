@@ -1,0 +1,130 @@
+@import 'variables';
+
+.login-section{
+    margin-top: 7.6rem;
+    padding: 3rem;
+}
+
+.vertical-line{
+    height: 90%;
+    width: 2px;
+    border: 1px solid $light-color-alt;
+}
+
+.login-wrapper{
+    border: 2px solid $light-color-alt;
+    background-color: $primary-background-color;
+    
+}
+
+.show-password{
+    font-size:x-small;
+    grid-template-columns: 50% 1fr;
+    padding: 6px 0;
+    
+    div{
+        display: flex;
+    }
+  
+    div:last-child{
+        justify-content: end;
+    }
+
+    #show-password{
+        margin: 0 5px 0 0;
+    }
+}
+
+.modal-message{
+    font-size:smaller;
+
+    & span{
+        color: rgb(136, 136, 243);
+        margin-left: 3px;
+    }
+    & span:hover{
+        color: blue;
+}
+}
+
+
+.input-label{
+    font-size:x-small;
+    margin: 4px;
+}
+
+#main-title{ 
+    padding: 4rem 0 0 4rem;
+    font-weight: bolder;
+}
+
+.login-inputs{
+    margin-bottom: 1.5rem;
+    height: 3.5rem;
+    border: 2px solid $secondary-background-color;
+    outline: none;
+    padding: 9px;   
+}:focus{
+    border-color: $light-color-alt;
+}
+
+@keyframes animate_border{
+    to{
+        transform:translateX(-50%)
+    }
+}
+
+.login-btn{
+    background-color: $light-color-alt;
+    position: relative;
+    overflow: hidden;
+    color: $primary-background-color;
+    font-weight: bold;
+    margin-bottom: 3.5rem;
+    padding-bottom: 3rem;
+}
+.login-btn:hover{
+    background-color: $light-color;
+    transition: 0.8s;
+}
+
+
+@media screen and (min-width:1200px) {
+ 
+    :root{
+        overflow-x:hidden ;
+    }
+
+    #login-container{
+        width: 40rem;
+
+        #main-title{
+            left: 30%;
+            }
+    }
+
+    .reg-title{
+        left: 45%;
+    }
+ 
+    #register-container{
+        grid-template-columns: 50% 2fr ;
+
+        .login-inputs{
+            width: 40rem;
+            display: block;
+        }
+    }
+}
+@media screen and (max-width:700px) {
+    .form-container{
+        grid-template-columns: 1fr ;
+    }
+
+    .vertical-line{
+        display: none;
+    }
+#main-title{
+    left: 20%;
+    }
+}

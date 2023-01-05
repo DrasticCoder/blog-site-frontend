@@ -1,0 +1,47 @@
+
+/* Older posts */
+.older-posts-grid-wrapper{
+    gap:   $gap ;
+}
+
+.older-posts-article-image-wrapper,
+.older-posts .article{
+    min-height:   $item-min-height-sm ;
+}
+
+.older-posts .article{
+    background-color:   $secondary-background-color ;
+}
+
+.older-posts-article-image-wrapper{
+    position: relative;
+}
+
+.older-posts-grid-wrapper .article-data-container{
+    position: static;
+    background-color: transparent;
+}
+
+.older-posts-grid-wrapper .article-title{
+    margin-bottom:   $margin-sm ;
+}
+
+.see-more-container{
+    padding-top:   $margin-md ;
+}
+
+.see-more-btn{
+    text-transform: uppercase;
+}
+
+.see-more-btn:hover{
+    color:   $light-color ;
+}
+
+.see-more-btn i{
+    transition: transform .25s;
+}
+
+.see-more-btn:hover i{
+    transform: translateX(.5rem) ;
+}
